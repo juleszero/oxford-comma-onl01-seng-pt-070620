@@ -5,13 +5,7 @@ def oxford_comma(array)
     when 1..2
       array.join(' and ')
   else
-    ox_comma = []
-    array.each do |comma|
-    ox_comma << comma+","
+    array[-1] = "and #{array[-1]}"
+    array.join(", ")
   end
-    ox_comma.insert(-2, "and")
-    ox_comma.join(" ")
 end
-end
-
-
