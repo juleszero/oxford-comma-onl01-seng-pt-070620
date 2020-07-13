@@ -9,7 +9,7 @@ def oxford_comma(array)
     array.each do |comma|
     ox_comma << comma+","
   end
-    ox_comma.insert(-2, "and ")
+    ox_comma.insert(-2, "and")
     ox_comma.join(" ")
 end
 end
