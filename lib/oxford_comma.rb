@@ -10,6 +10,7 @@ def oxford_comma(array)
     ox_comma << comma+","
     ox_comma.insert(-2, " and ")
     ox_comma.join(" ")
+  end
 end
 end
 
