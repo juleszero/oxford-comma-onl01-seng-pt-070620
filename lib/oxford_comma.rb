@@ -5,6 +5,15 @@ def oxford_comma(array)
     when 1..2
     array.join(' and ')
   else
-    array.insert(-2, " and ").join(", ")
+    ox_comma = []
+    array.each do |comma|
+    ox_comma << comma+","
 end
 end
+
+
+fruits.each do |fruit|
+  new_fruit << fruit+","
+end
+new_fruit.insert(-2, " and ")
+puts new_fruit.join(" ")
